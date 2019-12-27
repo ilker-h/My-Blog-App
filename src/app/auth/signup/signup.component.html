@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <!-- in the template-driven approach, Angular gives us access to the underlying object, ngForm.
+     Then we just set that object equal to a local reference, #signupForm, then we pass that to 
+     the method onSignup() (just like you might pass a variable as an argument). Ohhh so that's why in the TS file,
+     we use that parameter type in onSignup(form: NgForm)-->
+  <form (submit)="onSignup(signupForm)" #signupForm="ngForm" *ngIf="!isLoading">
+    <mat-form-field>
+      <!-- we also put the local reference #emailInput and assign it the value ngModel. And we 
+        write the name and ngModel attributes to register this as an input. This allows the ngModel in 
+        #emailInput="ngModel" to get access to the underlying object controlled by Angular and then we 
+        can use it in the *ngIf. "required" and "email" are validators provided by Angular-->
+      <input matInput type="email" placeholder="Email" name="email" ngModel #emailInput="ngModel" required email>
+      <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="password" name="password" ngModel matInput placeholder="Password" #passwordInput="ngModel" required>
+      <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit" *ngIf="!isLoading">Signup</button>
+  </form>
+</mat-card>

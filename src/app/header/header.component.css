@@ -1,0 +1,20 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a   {
+    text-decoration: none;
+    color: white;
+}
+
+/* Since the toolbar uses flex box by default, this will make sure that the spacer element
+ takes all the available remaining space between the other elements */
+.spacer {
+    flex: 1 1 auto;
+}
+
+ul {
+    display: flex;
+}
