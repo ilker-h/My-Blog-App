@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 To run the app, create a terminal and write “ng serve” then create another terminal and write “npm run start:server”, then go to a browser and go to the URL “localhost:4200”.
 
-If there’s still a problem, log into MongoDB and go to the Security>Network Access>IP Whitelist and add your IP address (https://cloud.mongodb.com/v2/5cd4d1d379358ed3bc80c95e#security/network/whitelist ).
+If there’s still a problem, log into MongoDB and go to the Security>Network Access>IP Whitelist and add your IP address.
 
 
 ## CLI
