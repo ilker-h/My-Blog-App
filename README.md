@@ -1,11 +1,19 @@
-# To Run the App
+# Walkthrough Video and Links
+
+You can see a walkthrough at https://www.youtube.com/watch?v=OMG9tS4SmO8.
+
+Refer to Udemy course https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/.
+
+________________________________________________________________________________________________________________________________________
+
+## To Run the App
 
 To run the app, create a terminal and write “ng serve” then create another terminal and write “npm run start:server”, then go to a browser and go to the URL “localhost:4200”.
 
 If there’s still a problem, log into MongoDB and go to the Security>Network Access>IP Whitelist and add your IP address (https://cloud.mongodb.com/v2/5cd4d1d379358ed3bc80c95e#security/network/whitelist ).
 
 
-# MeanCourse
+## CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
