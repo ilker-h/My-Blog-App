@@ -1,6 +1,6 @@
 # Walkthrough Video and Links
 
-You can see a walkthrough at https://www.youtube.com/watch?v=OMG9tS4SmO8.
+You can see a video walkthrough of this web app at https://vimeo.com/381809538.
 
 Refer to Udemy course https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/.
 
